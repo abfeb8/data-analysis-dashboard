@@ -4,10 +4,20 @@ import React from 'react';
 import NavItem from '../navigation/NavItem';
 import SearchBar from '../navigation/SearchBar';
 import UserProfileCard from '../navigation/UserProfileCard';
+import {
+	FiHome,
+	FiFileText,
+	FiMap,
+	FiFolder,
+	FiDatabase,
+	FiCpu,
+	FiSettings,
+	FiHelpCircle,
+} from 'react-icons/fi';
 
 const Sidebar: React.FC = () => {
 	return (
-		<aside className="w-60 bg-indigo-800 text-white flex flex-col">
+		<aside className="w-60 bg-primary text-white flex flex-col">
 			<div className="p-5">
 				<div className="flex items-center mb-6">
 					<div className="bg-white rounded-md p-2 mr-2">
@@ -25,43 +35,43 @@ const Sidebar: React.FC = () => {
 
 			<nav className="flex-1 px-2 py-4">
 				<NavItem
-					icon="dashboard"
+					icon={<FiHome size={18} />}
 					label="Dashboard"
 					href="/"
 					active
 				/>
 				<NavItem
-					icon="reports"
+					icon={<FiFileText size={18} />}
 					label="Reports"
 					href="/reports"
 				/>
 				<NavItem
-					icon="data"
+					icon={<FiMap size={18} />}
 					label="State Data"
 					href="/state-data"
 				/>
 				<NavItem
-					icon="projects"
+					icon={<FiFolder size={18} />}
 					label="Projects"
 					href="/projects"
 				/>
 				<NavItem
-					icon="database"
+					icon={<FiDatabase size={18} />}
 					label="Worker Database"
 					href="/worker-database"
 				/>
 				<NavItem
-					icon="ai"
+					icon={<FiCpu size={18} />}
 					label="AI Report"
 					href="/ai-report"
 				/>
 				<NavItem
-					icon="settings"
+					icon={<FiSettings size={18} />}
 					label="Settings"
 					href="/settings"
 				/>
 				<NavItem
-					icon="support"
+					icon={<FiHelpCircle size={18} />}
 					label="Help & Support"
 					href="/support"
 				/>

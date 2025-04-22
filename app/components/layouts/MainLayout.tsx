@@ -9,9 +9,11 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
 	return (
-		<div className="flex h-screen bg-gray-50">
+		<div className="flex h-screen bg-primary border-4 border-solid border-primary">
 			<Sidebar />
-			<main className="flex-1 overflow-auto p-6">{children}</main>
+			<main className="flex-1 overflow-auto bg-white p-6 m-1 border rounded-4xl">
+				{children}
+			</main>
 		</div>
 	);
 };

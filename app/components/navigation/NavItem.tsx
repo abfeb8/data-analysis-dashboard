@@ -1,21 +1,11 @@
 'use client';
 
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-// Icons mapping component
-const Icon: React.FC<{ name: string }> = ({ name }) => {
-	// This is a placeholder. In a real implementation, you would use an icon library or SVG icons
-	return (
-		<div className="h-5 w-5 flex items-center justify-center rounded-md bg-indigo-700">
-			<span className="sr-only">{name} icon</span>
-		</div>
-	);
-};
-
 interface NavItemProps {
-	icon: string;
+	icon: ReactNode;
 	label: string;
 	href: string;
 	active?: boolean;
@@ -34,7 +24,7 @@ const NavItem: React.FC<NavItemProps> = ({ icon, label, href, active }) => {
 						: 'text-indigo-200 hover:bg-indigo-700/50'
 				}`}
 			>
-				<Icon name={icon} />
+				<span className="flex items-center justify-center">{icon}</span>
 				<span className="ml-3">{label}</span>
 			</div>
 		</Link>
