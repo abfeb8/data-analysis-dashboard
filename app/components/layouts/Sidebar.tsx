@@ -36,7 +36,6 @@ function Sidebar() {
 					icon={<FiHome size={18} />}
 					label="Dashboard"
 					href="/"
-					active
 				/>
 				<NavItem
 					icon={<FiFileText size={18} />}
@@ -62,11 +61,6 @@ function Sidebar() {
 					icon={<FiCpu size={18} />}
 					label="AI Report"
 					href="/ai-report"
-				/>
-				<NavItem
-					icon={<FiSettings size={18} />}
-					label="Settings"
-					href="/settings"
 				/>
 				<NavItem
 					icon={<FiHelpCircle size={18} />}

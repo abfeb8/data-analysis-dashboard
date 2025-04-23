@@ -11,7 +11,7 @@ function MainLayout({ children }: MainLayoutProps) {
 		<div className="flex h-screen bg-primary border-4 border-solid border-primary">
 			<Sidebar />
 			<div className="flex-1 relative">
-				<main className="h-full overflow-auto bg-white p-6 m-1 border rounded-xl scrollbar-hide">
+				<main className="h-full overflow-auto bg-white p-6 rounded-xl scrollbar-hide">
 					{children}
 				</main>
 				<ScrollIndicator />

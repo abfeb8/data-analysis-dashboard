@@ -14,7 +14,7 @@ function DashboardContent({ children, title }: DashboardContentProps) {
 				</h1>
 			</header>
 
-			<div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+			<div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-6">
 				{children}
 			</div>
 		</div>
