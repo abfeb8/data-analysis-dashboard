@@ -9,13 +9,9 @@ interface UserProfileCardProps {
 	avatarUrl: string;
 }
 
-const UserProfileCard: React.FC<UserProfileCardProps> = ({
-	name,
-	role,
-	avatarUrl,
-}) => {
+function UserProfileCard({ name, role, avatarUrl }: UserProfileCardProps) {
 	return (
-		<div className="flex items-center p-2 rounded-lg bg-indigo-900/50 hover:bg-indigo-900 cursor-pointer transition-colors">
+		<div className="flex items-center p-2 rounded-lg hover:bg-indigo-900 cursor-pointer transition-colors">
 			<div className="relative h-8 w-8 rounded-full overflow-hidden bg-indigo-700 mr-2">
 				{/* Use a fallback if avatar image fails to load */}
 				<div className="h-full w-full flex items-center justify-center text-xs font-medium text-white">
@@ -61,6 +57,6 @@ const UserProfileCard: React.FC<UserProfileCardProps> = ({
 			</div>
 		</div>
 	);
-};
+}
 
 export default UserProfileCard;

@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import NavItem from '../navigation/NavItem';
 import SearchBar from '../navigation/SearchBar';
@@ -15,7 +13,7 @@ import {
 	FiHelpCircle,
 } from 'react-icons/fi';
 
-const Sidebar: React.FC = () => {
+function Sidebar() {
 	return (
 		<aside className="w-60 bg-primary text-white flex flex-col">
 			<div className="p-5">
@@ -33,7 +31,7 @@ const Sidebar: React.FC = () => {
 				<SearchBar />
 			</div>
 
-			<nav className="flex-1 px-2 py-4">
+			<nav className="flex-1 px-5">
 				<NavItem
 					icon={<FiHome size={18} />}
 					label="Dashboard"
@@ -86,6 +84,6 @@ const Sidebar: React.FC = () => {
 			</div>
 		</aside>
 	);
-};
+}
 
 export default Sidebar;

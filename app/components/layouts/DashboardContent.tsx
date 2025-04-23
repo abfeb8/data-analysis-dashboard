@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 
 interface DashboardContentProps {
@@ -7,10 +5,7 @@ interface DashboardContentProps {
 	title: string;
 }
 
-const DashboardContent: React.FC<DashboardContentProps> = ({
-	children,
-	title,
-}) => {
+function DashboardContent({ children, title }: DashboardContentProps) {
 	return (
 		<div className="h-full">
 			<header className="mb-6">
@@ -24,6 +19,6 @@ const DashboardContent: React.FC<DashboardContentProps> = ({
 			</div>
 		</div>
 	);
-};
+}
 
 export default DashboardContent;

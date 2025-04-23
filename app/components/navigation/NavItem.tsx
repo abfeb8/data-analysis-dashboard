@@ -11,17 +11,17 @@ interface NavItemProps {
 	active?: boolean;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ icon, label, href, active }) => {
+function NavItem({ icon, label, href, active }: NavItemProps) {
 	const pathname = usePathname();
 	const isActive = active || pathname === href;
 
 	return (
 		<Link href={href}>
 			<div
-				className={`flex items-center px-3 py-2 my-1 rounded-md text-sm cursor-pointer transition-colors ${
+				className={`flex items-center px-3 py-2 my-1 rounded-xl text-sm cursor-pointer transition-colors ${
 					isActive
-						? 'bg-indigo-700 text-white'
-						: 'text-indigo-200 hover:bg-indigo-700/50'
+						? 'bg-accent text-primary font-semibold'
+						: 'text-white hover:text-accent'
 				}`}
 			>
 				<span className="flex items-center justify-center">{icon}</span>
@@ -29,6 +29,6 @@ const NavItem: React.FC<NavItemProps> = ({ icon, label, href, active }) => {
 			</div>
 		</Link>
 	);
-};
+}
 
 export default NavItem;

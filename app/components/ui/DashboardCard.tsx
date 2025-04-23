@@ -8,11 +8,11 @@ interface DashboardCardProps {
 	className?: string;
 }
 
-const DashboardCard: React.FC<DashboardCardProps> = ({
+function DashboardCard({
 	children,
 	title,
 	className = '',
-}) => {
+}: DashboardCardProps) {
 	return (
 		<div
 			className={`bg-white p-5 rounded-lg shadow-sm border border-gray-100 ${className}`}
@@ -23,6 +23,6 @@ const DashboardCard: React.FC<DashboardCardProps> = ({
 			<div className="h-[300px]">{children}</div>
 		</div>
 	);
-};
+}
 
 export default DashboardCard;
