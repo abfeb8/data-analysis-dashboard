@@ -3,4 +3,5 @@ description:
 globs: 
 alwaysApply: true
 ---
-use function declaration pattern for components
+use function declaration pattern for components.
+when updating an existing file only change the code which is required to achive the give functionality.
