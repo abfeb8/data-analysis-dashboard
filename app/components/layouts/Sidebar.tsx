@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import NavItem from '../navigation/NavItem';
-import UserProfileCard from '../navigation/UserProfileCard';
+import NavItem from '@/components/navigation/NavItem';
+import UserProfileCard from '@/components/navigation/UserProfileCard';
 import {
 	FiHome,
 	FiFileText,

@@ -1,6 +1,6 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import ScrollIndicator from '../ui/ScrollIndicator';
+import Sidebar from '@/components/layouts/Sidebar';
+import ScrollIndicator from '@/components/ui/ScrollIndicator';
 
 interface MainLayoutProps {
 	children: React.ReactNode;

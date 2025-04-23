@@ -1,6 +1,6 @@
 import React from 'react';
-import DashboardContent from './components/layouts/DashboardContent';
-import DashboardCard from './components/ui/DashboardCard';
+import DashboardContent from '@/components/layouts/DashboardContent';
+import DashboardCard from '@/components/ui/DashboardCard';
 
 export default function Home() {
 	return (
