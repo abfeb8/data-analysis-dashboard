@@ -3,5 +3,6 @@ description:
 globs: 
 alwaysApply: true
 ---
+get NextJs info from url: https://nextjs.org/docs/app
 use function declaration pattern for components.
 when updating an existing file only change the code which is required to achive the give functionality.

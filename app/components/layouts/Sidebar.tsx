@@ -108,7 +108,7 @@ function Sidebar() {
 				<UserProfileCard
 					name="Ram Prasad Mohan"
 					role="Admin"
-					avatarUrl="/avatar.png"
+					avatarUrl="/user.png"
 					minimized={minimized}
 				/>
 			</div>
